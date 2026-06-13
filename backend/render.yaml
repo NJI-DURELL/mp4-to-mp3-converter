@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: soundshift-backend
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: ALLOWED_ORIGIN
+        value: https://your-vercel-app.vercel.app
+    disk:
+      name: tmp-storage
+      mountPath: /opt/render/project/src/uploads
+      sizeGB: 1
