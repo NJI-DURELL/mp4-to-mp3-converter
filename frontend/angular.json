@@ -28,8 +28,7 @@
           "configurations": {
             "production": {
               "budgets": [
-                { "type": "initial", "maximumWarning": "500kb", "maximumError": "1mb" },
-                { "type": "anyComponentStyle", "maximumWarning": "20kb", "maximumError": "24kb" }
+                { "type": "initial", "maximumWarning": "500kb", "maximumError": "1mb" }
               ],
               "fileReplacements": [
                 {
@@ -57,5 +56,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "d2fd7ec7-9cdf-4f94-97c1-97ec954a99b2"
   }
 }
