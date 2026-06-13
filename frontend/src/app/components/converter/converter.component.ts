@@ -170,6 +170,10 @@ export class ConverterComponent implements OnDestroy {
     return this.qualities.find(q => q.value === this.selectedQuality)!;
   }
 
+  isState(s: string): boolean {
+    return (this.state as string) === s;
+  }
+
   ngOnDestroy() {
     this.sse?.close();
   }

@@ -279,7 +279,7 @@
           <div class="progress-steps">
             <span [class.step-active]="state === 'uploading' || state === 'converting'">Upload</span>
             <span [class.step-active]="state === 'converting'">Convert</span>
-            <span [class.step-active]="$any(state) === 'done'">Done</span>
+            <span [class.step-active]="isState('done')">Done</span>
           </div>
         </div>
 
